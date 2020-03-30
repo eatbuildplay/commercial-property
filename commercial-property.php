@@ -29,25 +29,13 @@ class Plugin {
     require_once(COMMERCIAL_PROPERTY_PATH . 'src/shortcodes/ListingTableShortcode.php');
     require_once(COMMERCIAL_PROPERTY_PATH . 'src/shortcodes/ListingPriceShortcode.php');
     require_once(COMMERCIAL_PROPERTY_PATH . 'src/shortcodes/ListingFeaturesShortcode.php');
+    require_once(COMMERCIAL_PROPERTY_PATH . 'src/shortcodes/PropertyListShortcode.php');
+
 
     new ListingTableShortcode();
     new ListingPriceShortcode();
     new ListingFeaturesShortcode();
-
-    add_action( 'elementor/widgets/widgets_registered', [$this, 'registerWidgets'] );
-
-  }
-
-  public function registerWidgets() {
-
-    require_once( COMMERCIAL_PROPERTY_PATH . 'src/ElementorPostWidget.php' );
-    \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new ElementorPostWidget() );
-
-    require_once( COMMERCIAL_PROPERTY_PATH . 'src/acf/widgets/AcfTextWidget.php' );
-    \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new AcfTextWidget() );
-
-    require_once( COMMERCIAL_PROPERTY_PATH . 'src/acf/widgets/AcfImageWidget.php' );
-    \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new AcfImageWidget() );
+    new PropertyListShortcode();
 
   }
 

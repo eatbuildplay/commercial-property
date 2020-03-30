@@ -1,4 +1,4 @@
-<div class="frame-property-list-item">
+<div class="property-list-item">
 
   <h2><?php print $property->post_title; ?></h2>
   <h5>Property ID: <?php print $property->ID; ?></h5>
@@ -7,7 +7,7 @@
 
 <style>
 
-  .frame-property-list-item {
+  .property-list-item {
     float: left;
     margin: 20px 30px;
     max-width: 33%;
@@ -21,7 +21,7 @@
 
 (function($) {
 
-  $('.frame-property-list-item').on('click', function() {
+  $('.property-list-item').on('click', function() {
     window.location.href = 'https://google.com'
   })
 

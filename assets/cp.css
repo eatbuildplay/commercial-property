@@ -61,13 +61,13 @@ body {
  */
 
 /* Filters */
-.frame-lesson-filters {
+.lesson-filters {
   width: 100%;
   background: #F7F7F7;
   padding: 30px 20px;
   margin: 30px 0;
 }
-.frame-lesson-filters label {
+.lesson-filters label {
   display: block;
   margin: 0 0 4px 0;
   font-size: 14px;
@@ -75,7 +75,7 @@ body {
   color: #C2C2C2;
 }
 
-.frame-lesson-filters select {
+.lesson-filters select {
   min-width: 250px;
   min-height: 40px;
   font-size: 18px;
