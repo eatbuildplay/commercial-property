@@ -10,28 +10,3 @@
   </div>
 
 </div>
-
-<script>
-
-(function($) {
-
-  $('#filter_course').on('change', function() {
-    console.log('filter selected')
-
-    // do ajax call to get new filtered posts
-    data = {
-      action: 'property_list_load'
-    }
-    $.post( ElementorProFrontendConfig.ajaxurl, data, function( response ) {
-      if ( response.status == 'success' ) {
-
-      } else {
-
-      }
-    });
-
-  })
-
-})( jQuery );
-
-</script>

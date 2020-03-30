@@ -50,11 +50,19 @@ class Plugin {
     );
 
     wp_enqueue_script(
-      'handle-js',
+      'commercial-property-js',
       COMMERCIAL_PROPERTY_URL . 'assets/cp.js',
       array( 'jquery' ),
       '1.0.0',
       true
+    );
+
+    wp_localize_script(
+      'commercial-property-js',
+      'commercialProperty',
+      [
+        'ajaxurl' => admin_url( 'admin-ajax.php' )
+      ]
     );
 
   }

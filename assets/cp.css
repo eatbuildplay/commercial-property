@@ -6,6 +6,17 @@ body {
 }
 
 /*
+ * Property List Page
+ */
+.property-list-item {
+  float: left;
+  margin: 20px 30px;
+  max-width: 33%;
+  min-width: 180px;
+  cursor: pointer;
+}
+
+/*
  * Listing table shortcode styles
  */
 .cp-listing-table {
