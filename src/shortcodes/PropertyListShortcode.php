@@ -49,10 +49,10 @@ class PropertyListShortcode {
     $metaquery = [];
     $metaquery['relation'] = 'AND';
 
-    if( $filters['client'] ) {
+    if( $filters['property_type'] ) {
       $metaquery[] = array(
-        'key'	  	=> 'stakeholder',
-        'value'	  => $filters['client'],
+        'key'	  	=> 'property_type',
+        'value'	  => $filters['property_type'],
         'compare' => '=',
       );
     }

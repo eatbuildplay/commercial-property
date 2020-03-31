@@ -8,12 +8,26 @@ body {
 /*
  * Property List Page
  */
-.property-list-item {
-  float: left;
-  margin: 20px 30px;
-  max-width: 33%;
-  min-width: 180px;
+.property-list {
+  display: -webkit-flex; /* Safari */
+  display: flex; /* Standard syntax */
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+}
+.property-list-item-wrap {
+  display:flex;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 25px;
+  width: 33.33%;
+  max-width: 400px;
+  min-width: 150px;
   cursor: pointer;
+}
+.property-list a {
+  width: 100%;
+  text-align: center;
 }
 
 /*
