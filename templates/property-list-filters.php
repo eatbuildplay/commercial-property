@@ -4,9 +4,10 @@
     <label>Property Type</label>
     <select id="filter_property_type">
       <option value='0'>All Property Types</option>
-      <option value='1'>Office</option>
-      <option value='2'>Warehouse</option>
-      <option value='3'>Land</option>
+      <option value='9'>Commercial Land</option>
+      <option value='10'>Farm & Ranch</option>
+      <option value='7'>Office</option>
+      <option value='8'>Warehouse</option>
     </select>
   </div>
 

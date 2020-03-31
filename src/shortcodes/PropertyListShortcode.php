@@ -49,15 +49,30 @@ class PropertyListShortcode {
     $metaquery = [];
     $metaquery['relation'] = 'AND';
 
-    if( $filters['property_type'] ) {
+    /*
+    if( $filters['propertyType'] ) {
+
       $metaquery[] = array(
         'key'	  	=> 'property_type',
-        'value'	  => $filters['property_type'],
+        'value'	  => $filters['propertyType'],
         'compare' => '=',
+      );
+
+    }
+    */
+    $taxquery = [];
+    if( $filters['propertyType'] ) {
+      $taxquery = array(
+        array(
+          'taxonomy' => 'property_type',
+          'field'    => 'term_id',
+          'terms'    => $filters['propertyType'],
+          'include_children' => false
+        )
       );
     }
 
-    $properties = $this->fetchPropertiesFiltered( $metaquery );
+    $properties = $this->fetchPropertiesFiltered( $metaquery, $taxquery );
 
     // setup template
     $template = new Template();
@@ -85,12 +100,13 @@ class PropertyListShortcode {
 
   }
 
-  public function fetchPropertiesFiltered( $metaquery ) {
+  public function fetchPropertiesFiltered( $metaquery, $taxquery ) {
 
     $queryArgs = [
       'numberposts' => -1,
       'post_type'   => 'property',
-      'meta_query'	=> $metaquery
+      'meta_query'	=> $metaquery,
+      'tax_query' => $taxquery
     ];
 
     $posts = get_posts( $queryArgs );
