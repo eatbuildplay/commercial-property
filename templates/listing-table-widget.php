@@ -74,9 +74,6 @@ $fieldKeys = array(
 
 ?>
 
-<pre><?php //var_dump( $fieldValues ); ?></pre>
-
-
 <div class="cp-listing-table">
   <table>
     <thead>

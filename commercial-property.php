@@ -26,6 +26,7 @@ class Plugin {
     add_action('wp_enqueue_scripts', array( $this, 'scripts' ));
 
     require_once(COMMERCIAL_PROPERTY_PATH . 'src/Template.php');
+    require_once(COMMERCIAL_PROPERTY_PATH . 'src/Property.php');
     require_once(COMMERCIAL_PROPERTY_PATH . 'src/shortcodes/ListingTableShortcode.php');
     require_once(COMMERCIAL_PROPERTY_PATH . 'src/shortcodes/ListingPriceShortcode.php');
     require_once(COMMERCIAL_PROPERTY_PATH . 'src/shortcodes/ListingFeaturesShortcode.php');

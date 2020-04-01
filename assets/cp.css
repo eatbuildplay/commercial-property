@@ -34,13 +34,17 @@ body {
  * Listing table shortcode styles
  */
 .cp-listing-table {
+  margin:0;
 
 }
 
 .cp-listing-table table {
+  width: 100%;
   background: #F3F3F3;
   border-collapse: collapse;
   border-spacing: 0;
+  margin:0;
+  padding:0;
 }
 
 .cp-listing-table th,
@@ -56,8 +60,10 @@ body {
 }
 
 .cp-listing-table th {
-  font-size: 18px;
-  color: #747474;
+  font-size: 20px;
+  color: #FFF;
+  background: #F79F1F;
+  text-align: center;
 }
 .cp-listing-table .label {
   text-align: right;
@@ -75,7 +81,8 @@ body {
  *
  */
 .cp-listing-price {
-  font-size: 30px;
+  font-size: 32px;
+  font-family: verdana, sans-serif;
   color: #FFF;
 }
 
