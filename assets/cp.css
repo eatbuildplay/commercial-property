@@ -142,3 +142,12 @@ body {
 .cp-listing-file a {
   color: #FFF;
 }
+
+/* Custom Features */
+.cp-custom-feature {
+  color: #FFFFFF75;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 25px 5px 30px;
+  font-family: verdana, sans-serif;
+}

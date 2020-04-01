@@ -32,11 +32,13 @@ class Plugin {
     require_once(COMMERCIAL_PROPERTY_PATH . 'src/shortcodes/ListingFeaturesShortcode.php');
     require_once(COMMERCIAL_PROPERTY_PATH . 'src/shortcodes/ListingFilesShortcode.php');
     require_once(COMMERCIAL_PROPERTY_PATH . 'src/shortcodes/PropertyListShortcode.php');
+    require_once(COMMERCIAL_PROPERTY_PATH . 'src/shortcodes/ListingCustomFeaturesShortcode.php');
 
 
     new ListingTableShortcode();
     new ListingPriceShortcode();
     new ListingFeaturesShortcode();
+    new ListingCustomFeaturesShortcode();
     new ListingFilesShortcode();
     new PropertyListShortcode();
 
