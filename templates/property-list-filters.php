@@ -1,4 +1,4 @@
-<div class="lesson-filters">
+<div class="lesson-filter-section">
 
   <div class="lesson-filter">
     <label>Property Type</label>
