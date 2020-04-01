@@ -116,3 +116,29 @@ body {
 .lesson-filter {
   display: inline-block;
 }
+
+/* Common features */
+.cp-common-feature {
+  display: inline-block;
+  margin: 8px 12px 8px 0;
+  font-size: 22px;
+  font-family: verdana, sans-serif;
+  color: #FFF;
+}
+.cp-common-feature input {
+  width: 18px;
+  height: 18px;
+}
+
+/* Download */
+.cp-listing-file {
+  font-size: 22px;
+  background: #DF6C1C50;
+  padding: 25px;
+  text-align: center;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.cp-listing-file a {
+  color: #FFF;
+}
