@@ -13,21 +13,41 @@ body {
   display: flex; /* Standard syntax */
   flex-wrap: wrap;
   width: 100%;
+  max-width: 900px;
   position: relative;
+  justify-content: stretch;
+  border-top: solid 4px #F1F1F1;
+  border-left: solid 4px #F1F1F1;
 }
 .property-list-item-wrap {
   display:flex;
   box-sizing: border-box;
   margin: 0;
-  padding: 25px;
+  border-bottom: solid 4px #F1F1F1;
+  border-right: solid 4px #F1F1F1;
+  padding: 0;
   width: 33.33%;
   max-width: 400px;
   min-width: 150px;
   cursor: pointer;
+  background: #F9F9F9;
+}
+.property-list-item {
+  padding: 0 0 30px 0;
+  margin: 0;
 }
 .property-list a {
   width: 100%;
   text-align: center;
+  color: #323232;
+  font-family: verdana, sans-serif;
+}
+.property-list h2 {
+  padding: 25px 0 0 0;
+}
+.property-list h5 {
+  font-size: 16px;
+  color: #484848;
 }
 
 /*
