@@ -51,6 +51,29 @@ body {
 }
 
 /*
+ * Featured listings
+ */
+.featured-property-list-wrap {
+
+}
+.featured-property-list {
+  display: -webkit-flex; /* Safari */
+  display: flex; /* Standard syntax */
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  justify-content: stretch;
+  border-top: solid 4px #F1F1F1;
+  border-left: solid 4px #F1F1F1;
+}
+.featured-property-list .property-list-item-wrap {
+  width: 50%;
+  max-width: 450px;
+  min-width: 150px;
+}
+
+/*
  * Listing table shortcode styles
  */
 .cp-listing-table {
