@@ -30,7 +30,11 @@
   }
 
   // init load
-  loadPropertyList();
+  var propertyListEl = $('.property-list')
+  if( propertyListEl.length ) {
+    loadPropertyList();
+  }
+
 
   $('#filter_property_type').on('change', function() {
     loadPropertyList();

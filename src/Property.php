@@ -22,12 +22,17 @@ class Property {
     }
 
     if( $listingType == 'lease' ) {
-      $priceTerm = $fields['price_term'];
-      if( $price_term['value'] == 'annual' ) {
-        $term = 'per year';
+      if( isset( $fields['price_term'] )) {
+        $priceTerm = $fields['price_term'];
+        if( $price_term['value'] == 'annual' ) {
+          $term = 'per year';
+        } else {
+          $term = 'per month';
+        }
       } else {
         $term = 'per month';
       }
+
       $price = 'Lease for $' . number_format( $fields['price'] ) . ' ' . $term . '.';
     }
 
