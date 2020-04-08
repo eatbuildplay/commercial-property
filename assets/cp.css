@@ -3,12 +3,14 @@
  */
 body {
   margin: 0;
+  font-family: "Nunito Sans", Sans-serif;
 }
 
 /*
  * Property List Page
  */
 .property-list {
+  font-family:"Nunito Sans", Sans-serif;
   display: -webkit-flex; /* Safari */
   display: flex; /* Standard syntax */
   flex-wrap: wrap;
@@ -16,15 +18,10 @@ body {
   max-width: 900px;
   position: relative;
   justify-content: stretch;
-  border-top: solid 4px #F1F1F1;
-  border-left: solid 4px #F1F1F1;
 }
 .property-list-item-wrap {
-  display:flex;
   box-sizing: border-box;
   margin: 0;
-  border-bottom: solid 4px #F1F1F1;
-  border-right: solid 4px #F1F1F1;
   padding: 0;
   width: 33.33%;
   max-width: 400px;
@@ -33,8 +30,8 @@ body {
   background: #F9F9F9;
 }
 .property-list-item {
-  padding: 0 0 30px 0;
-  margin: 0;
+  padding: 0;
+  margin: 30px 15px;
 }
 .property-list a {
   width: 100%;
@@ -49,28 +46,73 @@ body {
   font-size: 16px;
   color: #484848;
 }
+.property-list-item .price {
+  font-weight: normal;
+  font-size: 18px;
+  color: #54595F70;
+  font-style: italic;
+}
+.featured-image-wrap {
+  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.featured-image-wrap img {
+  height: auto;
+  width: 100%;
+}
 
 /*
  * Featured listings
  */
 .featured-property-list-wrap {
-
+  padding:20px 30px;
+  background: #F9F9F9;
 }
 .featured-property-list {
+  padding: 0 15px 0 15px;
   display: -webkit-flex; /* Safari */
   display: flex; /* Standard syntax */
   flex-wrap: wrap;
   width: 100%;
-  max-width: 900px;
   position: relative;
   justify-content: stretch;
-  border-top: solid 4px #F1F1F1;
-  border-left: solid 4px #F1F1F1;
+}
+.featured-property-list-wrap .section-header {
+  color: #54595F;
+  text-align: center;
+  font-size: 45px;
+  vertical-align: middle;
+}
+.featured-property-list-wrap .section-title {
+  font-size: 55px;
 }
 .featured-property-list .property-list-item-wrap {
   width: 50%;
-  max-width: 450px;
-  min-width: 150px;
+  max-width: 50%;
+  min-width: 180px;
+  text-align: center;
+}
+.featured-property-list a {
+  text-align: center;
+  color: #54595F;
+}
+.featured-property-list-wrap .view-all-properties {
+  display: inline-block;
+  padding: 30px 50px;
+  box-sizing: border-box;
+  min-width: 320px;
+  width: 100%;
+  font-size: 26px;
+  color: #C2CBD2;
+  background: #B34D06;
+  margin: 30px 0 20px 0;
+  text-align: center;
+}
+.featured-property-list-wrap .view-all-properties:hover {
+  background: #B34D06F5;
 }
 
 /*
