@@ -15,36 +15,32 @@ body {
   display: flex; /* Standard syntax */
   flex-wrap: wrap;
   width: 100%;
-  max-width: 900px;
   position: relative;
   justify-content: stretch;
+}
+.property-list a {
+  font-family: "Nunito Sans", Sans-serif;
+  text-align: center;
+  color: #54595F;
+  width: 100%;
 }
 .property-list-item-wrap {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  width: 33.33%;
-  max-width: 400px;
-  min-width: 150px;
+  width: 50%;
+  max-width: 50%;
+  min-width: 180px;
   cursor: pointer;
   background: #F9F9F9;
+  text-align: center;
 }
 .property-list-item {
   padding: 0;
   margin: 30px 15px;
 }
-.property-list a {
-  width: 100%;
-  text-align: center;
-  color: #323232;
-  font-family: verdana, sans-serif;
-}
 .property-list h2 {
   padding: 25px 0 0 0;
-}
-.property-list h5 {
-  font-size: 16px;
-  color: #484848;
 }
 .property-list-item .price {
   font-weight: normal;
@@ -52,21 +48,21 @@ body {
   color: #54595F70;
   font-style: italic;
 }
-.featured-image-wrap {
-  height: 300px;
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-  vertical-align: middle;
-}
-.featured-image-wrap img {
-  height: auto;
-  width: 100%;
-}
 
 /*
  * Featured listings
  */
+ .featured-image-wrap {
+   height: 300px;
+   width: 100%;
+   max-width: 100%;
+   overflow: hidden;
+   vertical-align: middle;
+ }
+ .featured-image-wrap img {
+   height: auto;
+   width: 100%;
+ }
 .featured-property-list-wrap {
   padding:20px 30px;
   background: #F9F9F9;
@@ -135,7 +131,7 @@ body {
 .cp-listing-table th,
 .cp-listing-table td {
   color: #545454;
-  font-family: verdana, sans-serif;
+  font-family: "Nunito Sans", Sans-serif;
   font-size: 12px;
   text-align: left;
   padding: 15px 10px;
@@ -167,7 +163,7 @@ body {
  */
 .cp-listing-price {
   font-size: 32px;
-  font-family: verdana, sans-serif;
+  font-family: "Nunito Sans", Sans-serif;
   color: #FFF;
 }
 
@@ -188,7 +184,7 @@ body {
   display: block;
   margin: 0 0 4px 0;
   font-size: 14px;
-  font-family: verdana, sans-serif;
+  font-family: "Nunito Sans", Sans-serif;
   color: #C2C2C2;
 }
 
@@ -207,7 +203,7 @@ body {
   display: inline-block;
   margin: 8px 12px 8px 0;
   font-size: 22px;
-  font-family: verdana, sans-serif;
+  font-family: "Nunito Sans", Sans-serif;
   color: #FFF;
 }
 .cp-common-feature input {
@@ -234,5 +230,5 @@ body {
   font-size: 20px;
   font-weight: 400;
   margin: 10px 25px 5px 30px;
-  font-family: verdana, sans-serif;
+  font-family: "Nunito Sans", Sans-serif;
 }

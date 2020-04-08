@@ -36,7 +36,7 @@ if( !empty( $properties )) :
 
   </div>
 
-  <a class="view-all-properties" href="<?php site_url('properties'); ?>">View All Properties</a>
+  <a class="view-all-properties" href="<?php print site_url('/properties/'); ?>">View All Properties</a>
 
 </div>
 
