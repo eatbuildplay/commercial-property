@@ -174,28 +174,52 @@ body {
  */
 
 /* Filters */
-.lesson-filter-section {
+.property-filter-section {
   width: 100%;
-  background: #F7F7F7;
+  background: #54595F;
   padding: 30px 20px;
-  margin: 30px 0;
+  margin: 30px 0 0 0;
 }
-.lesson-filter-section label {
+.property-filter-section h3 {
   display: block;
   margin: 0 0 4px 0;
-  font-size: 14px;
-  font-family: "Nunito Sans", Sans-serif;
+  font-size: 20px;
   color: #C2C2C2;
 }
 
-.lesson-filter-section select {
+.property-filter-section select {
   min-width: 250px;
   min-height: 40px;
   font-size: 18px;
 }
 
-.lesson-filter {
+.property-filter {
   display: inline-block;
+  margin-right: 40px;
+  vertical-align: top;
+  color: #FFF;
+}
+.property-filter select {
+  background: #EFEFEF;
+  color: #54595F;
+  padding: 6px 12px;
+  font-size: 20px;
+}
+.property-filter input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.property-filter span {
+  vertical-align: middle;
+}
+.property-filter label {
+  font-size: 20px;
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 4px 12px 0 0;
 }
 
 /* Common features */

@@ -1,7 +1,7 @@
-<div class="lesson-filter-section">
+<div class="property-filter-section">
 
-  <div class="lesson-filter">
-    <label>Property Type</label>
+  <div class="property-filter property-type-filter">
+    <h3>Property Type</h3>
     <select id="filter_property_type">
       <option value='0'>All Property Types</option>
       <option value='9'>Commercial Land</option>
@@ -11,10 +11,10 @@
     </select>
   </div>
 
-  <div class="lesson-filter">
-    <label>Listing Type</label>
-    <input type="checkbox" /> For Sale <br />
-    <input type="checkbox" /> For Lease <br />
+  <div class="property-filter listing-type-filter">
+    <h3>Listing Type</h3>
+    <label><input type="checkbox" /> <span>For Sale</span></label>
+    <label><input type="checkbox" /> <span>For Lease</span></label>
   </div>
 
 </div>
