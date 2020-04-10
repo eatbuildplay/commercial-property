@@ -34,6 +34,7 @@ class Plugin {
     require_once(COMMERCIAL_PROPERTY_PATH . 'src/shortcodes/PropertyListShortcode.php');
     require_once(COMMERCIAL_PROPERTY_PATH . 'src/shortcodes/ListingCustomFeaturesShortcode.php');
     require_once(COMMERCIAL_PROPERTY_PATH . 'src/shortcodes/FeaturedPropertyShortcode.php');
+    require_once(COMMERCIAL_PROPERTY_PATH . 'src/shortcodes/PropertyListMapShortcode.php');
 
 
     new ListingTableShortcode();
@@ -42,6 +43,7 @@ class Plugin {
     new ListingCustomFeaturesShortcode();
     new ListingFilesShortcode();
     new PropertyListShortcode();
+    new PropertyListMapShortcode();
     new FeaturedPropertyShortcode();
 
   }
