@@ -256,3 +256,8 @@ body {
   margin: 10px 25px 5px 30px;
   font-family: "Nunito Sans", Sans-serif;
 }
+
+/* Maps */
+#cp-property-list-map {
+  height: 450px;
+}

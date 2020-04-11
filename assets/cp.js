@@ -41,3 +41,32 @@
   })
 
 })( jQuery );
+
+
+
+/*
+ * Listings map
+ */
+var map;
+function initMap() {
+
+  // map setup
+  map = new google.maps.Map(document.getElementById('cp-property-list-map'), {
+   center: {
+     lat: 30.633249,
+     lng: -97.676979
+   },
+   zoom: 14
+  });
+
+  // marker addition
+  var latLng = {lat: -25.363, lng: 131.044};
+  var marker = new google.maps.Marker({
+   position: latLng,
+   map: map,
+   title: 'Hello World!'
+  });
+
+
+
+}

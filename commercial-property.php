@@ -66,6 +66,14 @@ class Plugin {
       true
     );
 
+    wp_enqueue_script(
+      'commercial-property-google-maps-js',
+      'https://maps.googleapis.com/maps/api/js?key=AIzaSyD1wJo8NuuIQVBDqCmk1n5nAzWAIg6a7HQ&callback=initMap',
+      array( 'commercial-property-js' ),
+      '1.0.0',
+      true
+    );
+
     wp_localize_script(
       'commercial-property-js',
       'commercialProperty',
