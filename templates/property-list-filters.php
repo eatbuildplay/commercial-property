@@ -13,8 +13,8 @@
 
   <div class="property-filter listing-type-filter">
     <h3>Listing Type</h3>
-    <label><input type="checkbox" /> <span>For Sale</span></label>
-    <label><input type="checkbox" /> <span>For Lease</span></label>
+    <label><input type="checkbox" value="sale" /> <span>For Sale</span></label>
+    <label><input type="checkbox" value="lease" /> <span>For Lease</span></label>
   </div>
 
 </div>

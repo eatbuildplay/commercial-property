@@ -6,11 +6,23 @@
 
     var filterPropertyType = $('#filter_property_type').val()
 
+    var filterListingType = [];
+    var i = 0;
+
+    console.log( $('.listing-type-filter input:checked') )
+
+    $('.listing-type-filter input:checked').each(function () {
+      filterListingType[i++] = $(this).val();
+    });
+
+    console.log( filterListingType )
+
     // do ajax call to get new filtered posts
     data = {
       action: 'property_list_load',
       filters: {
-        propertyType: filterPropertyType
+        propertyType: filterPropertyType,
+        listingType: filterListingType
       }
     }
     $.post( commercialProperty.ajaxurl, data, function( response ) {
@@ -36,7 +48,7 @@
   }
 
 
-  $('#filter_property_type').on('change', function() {
+  $('#filter_property_type, .listing-type-filter input').on('change', function() {
     loadPropertyList();
   })
 
