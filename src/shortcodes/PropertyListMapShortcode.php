@@ -26,6 +26,7 @@ class PropertyListMapShortcode {
     foreach( $propertyPosts as $post ) {
       $property = new \stdClass;
       $property->post = $post;
+      $property->permalink = get_permalink( $post->ID );
       $property->fields = get_fields( $post->ID );
       $properties[] = $property;
     }

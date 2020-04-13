@@ -56,7 +56,7 @@ function initMap() {
      lat: 30.633249,
      lng: -97.676979
    },
-   zoom: 14
+   zoom: 13
   });
 
   // marker addition
@@ -87,8 +87,29 @@ function initMap() {
      title: title
     });
 
-  })
 
+    var infoBoxContent = '';
+    infoBoxContent += '<a href="' + property.permalink + '">';
+    infoBoxContent += '<h2>' + property.post.post_title + '</h2>';
+    infoBoxContent += '<img style="max-width: 100%; max-height: 150px;" src="' + property.fields.main_image.url + '" />';
+    infoBoxContent += '<h3>' + property.fields.map_address + '</h3>';
+    infoBoxContent += '<hr />';
+    infoBoxContent += '<h4>' + property.fields.listing_type.label + '</h4>';
+    infoBoxContent += '</a>';
+
+    var infowindow = new google.maps.InfoWindow({
+      content: infoBoxContent
+    });
+
+    marker.addListener('click', function() {
+      infowindow.open(map, marker);
+    });
+
+    google.maps.event.addListener(map, "click", function(event) {
+      infowindow.close();
+    });
+
+  });
 
 
 
