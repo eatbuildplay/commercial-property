@@ -21,7 +21,15 @@ class PropertyListMapShortcode {
     $atts = shortcode_atts( array(), $atts, $this->tag );
 
     // get properties
-    $properties = $this->fetchProperties();
+    $propertyPosts = $this->fetchProperties();
+    $properties = [];
+    foreach( $propertyPosts as $post ) {
+      $property = new \stdClass;
+      $property->post = $post;
+      $property->fields = get_fields( $post->ID );
+      $properties[] = $property;
+    }
+    wp_localize_script( 'commercial-property-js', 'propertyList', $properties );
 
     $template = new Template();
     $template->path = 'templates/';
@@ -42,17 +50,6 @@ class PropertyListMapShortcode {
     $metaquery = [];
     $metaquery['relation'] = 'AND';
 
-    /*
-    if( $filters['propertyType'] ) {
-
-      $metaquery[] = array(
-        'key'	  	=> 'property_type',
-        'value'	  => $filters['propertyType'],
-        'compare' => '=',
-      );
-
-    }
-    */
     $taxquery = [];
     if( $filters['propertyType'] ) {
       $taxquery = array(

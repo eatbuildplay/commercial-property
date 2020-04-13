@@ -51,7 +51,7 @@ class Plugin {
   public function scripts() {
 
     wp_enqueue_style(
-      'handle-js',
+      'commercial-property-css',
       COMMERCIAL_PROPERTY_URL . 'assets/cp.css',
       array(),
       '1.0.0',

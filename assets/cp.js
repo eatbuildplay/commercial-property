@@ -60,12 +60,35 @@ function initMap() {
   });
 
   // marker addition
-  var latLng = {lat: -25.363, lng: 131.044};
-  var marker = new google.maps.Marker({
-   position: latLng,
-   map: map,
-   title: 'Hello World!'
-  });
+
+  propertyList.forEach( function( property, index ) {
+
+    console.log( property.fields );
+
+    var fields = property.fields;
+
+    if( fields.map_address_lat & fields.map_address_long ) {
+      var title = parseFloat(fields.map_address_lat) + ', ' + parseFloat(fields.map_address_long);
+      var latLng = {
+        lat: parseFloat(fields.map_address_lat),
+        lng: parseFloat(fields.map_address_long)
+      };
+    } else {
+      var title = '30.633249, -97.676979';
+      var latLng = {
+        lat: 30.633249,
+        lng: -97.676979
+      };
+    }
+
+    var marker = new google.maps.Marker({
+     position: latLng,
+     map: map,
+     title: title
+    });
+
+  })
+
 
 
 
