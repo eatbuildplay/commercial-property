@@ -47,19 +47,21 @@ class PropertyListShortcode {
 
     // setup metaquery
     $metaquery = [];
-    $metaquery['relation'] = 'AND';
+    $metaquery['relation'] = 'OR';
 
-    /*
-    if( $filters['propertyType'] ) {
+    if( $filters['listingType'] ) {
 
-      $metaquery[] = array(
-        'key'	  	=> 'property_type',
-        'value'	  => $filters['propertyType'],
-        'compare' => '=',
-      );
+      foreach( $filters['listingType'] as $listingType ) {
+        $metaquery[] = array(
+          'key'	  	=> 'listing_type',
+          'value'	  => $listingType,
+          'compare' => '=',
+        );
+      }
 
     }
-    */
+
+    // setup taxonomy query
     $taxquery = [];
     if( $filters['propertyType'] ) {
       $taxquery = array(
