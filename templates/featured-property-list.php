@@ -5,7 +5,7 @@ if( !empty( $properties )) :
 ?>
 
 <div class="featured-property-list-wrap">
-<h2 class="section-header"><i class="fas fa-warehouse"></i> <br /><span class="section-title">Featured Properties</span></h2>
+<h2 class="section-header"><span class="section-title">Featured Properties</span></h2>
 
 <div class="featured-property-list">
 
