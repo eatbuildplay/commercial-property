@@ -3,7 +3,7 @@
  */
 body {
   margin: 0;
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: "Lato", Sans-serif;
 }
 
 /*
@@ -17,9 +17,12 @@ body {
   width: 100%;
   position: relative;
   justify-content: stretch;
+  background: #F9F9F9;
+  padding-left: 15px;
+  box-sizing: border-box;
 }
 .property-list a {
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: "Lato", Sans-serif;
   text-align: center;
   color: #54595F;
   width: 100%;
@@ -28,8 +31,8 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  width: 50%;
-  max-width: 50%;
+  width: 33.33333%;
+  max-width: 33.33333%;
   min-width: 180px;
   cursor: pointer;
   background: #F9F9F9;
@@ -37,7 +40,7 @@ body {
 }
 .property-list-item {
   padding: 0;
-  margin: 30px 15px;
+  margin: 30px 15px 30px 0;
 }
 .property-list h2 {
   padding: 25px 0 0 0;
@@ -48,21 +51,32 @@ body {
   color: #54595F70;
   font-style: italic;
 }
+.property-list-image-wrap {
+  height: 200px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.property-list-image-wrap img {
+  height: auto;
+  width: 100%;
+}
 
 /*
  * Featured listings
  */
- .featured-image-wrap {
-   height: 300px;
-   width: 100%;
-   max-width: 100%;
-   overflow: hidden;
-   vertical-align: middle;
- }
- .featured-image-wrap img {
-   height: auto;
-   width: 100%;
- }
+.featured-image-wrap {
+  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.featured-image-wrap img {
+  height: auto;
+  width: 100%;
+}
 .featured-property-list-wrap {
   padding:20px 30px;
   background: #F9F9F9;
@@ -75,6 +89,7 @@ body {
   width: 100%;
   position: relative;
   justify-content: stretch;
+  background: #F9F9F9;
 }
 .featured-property-list-wrap .section-header {
   color: #54595F;
@@ -131,7 +146,7 @@ body {
 .cp-listing-table th,
 .cp-listing-table td {
   color: #545454;
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: "Lato", Sans-serif;
   font-size: 12px;
   text-align: left;
   padding: 15px 10px;
@@ -163,7 +178,7 @@ body {
  */
 .cp-listing-price {
   font-size: 32px;
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: "Lato", Sans-serif;
   color: #FFF;
 }
 
@@ -227,7 +242,7 @@ body {
   display: inline-block;
   margin: 8px 12px 8px 0;
   font-size: 22px;
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: "Lato", Sans-serif;
   color: #FFF;
 }
 .cp-common-feature input {
@@ -254,7 +269,7 @@ body {
   font-size: 20px;
   font-weight: 400;
   margin: 10px 25px 5px 30px;
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: "Lato", Sans-serif;
 }
 
 /* Maps */

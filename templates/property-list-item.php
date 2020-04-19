@@ -10,7 +10,7 @@ $mainImage = get_field('main_image', $property->ID);
   <a href="<?php print get_permalink( $property->ID ); ?>">
     <div class="property-list-item">
       <?php if( $mainImage ) : ?>
-        <div class="featured-image-wrap">
+        <div class="property-list-image-wrap">
           <img src="<?php print $mainImage['sizes']['large']; ?>" />
         </div>
       <?php endif; ?>
