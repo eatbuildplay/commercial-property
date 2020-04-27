@@ -276,3 +276,25 @@ body {
 #cp-property-list-map {
   height: 450px;
 }
+
+.gm-style-iw-d {
+  text-align: center;
+}
+.gm-style-iw-d > div {
+  padding: 15px;
+}
+.cp-infobox {
+  display: inline-block;
+  width: 360px;
+  max-width: 360px;
+  min-width: 180px;
+  color: #54595F;
+  text-align: center;
+}
+.cp-infobox img {
+  max-width: 100%;
+  max-height: 200px;
+}
+.cp-infobox h2 {
+
+}
