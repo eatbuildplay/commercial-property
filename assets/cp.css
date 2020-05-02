@@ -10,7 +10,7 @@ body {
  * Property List Page
  */
 .property-list {
-  font-family:"Nunito Sans", Sans-serif;
+  font-family:"Lato", Sans-serif;
   display: -webkit-flex; /* Safari */
   display: flex; /* Standard syntax */
   flex-wrap: wrap;
@@ -297,4 +297,20 @@ body {
 }
 .cp-infobox h2 {
 
+}
+
+/*
+ * Responsive Styles
+ */
+@media only screen and (max-width: 600px) {
+  .featured-property-list .property-list-item-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+  .featured-image-wrap {
+    height: auto;
+  }
+  .featured-property-list-wrap {
+    padding: 20px 0;
+  }
 }

@@ -54,7 +54,7 @@ class Plugin {
       'commercial-property-css',
       COMMERCIAL_PROPERTY_URL . 'assets/cp.css',
       array(),
-      '1.0.0',
+      '1.0.2',
       'all'
     );
 
