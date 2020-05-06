@@ -36,7 +36,6 @@ class Plugin {
     require_once(COMMERCIAL_PROPERTY_PATH . 'src/shortcodes/FeaturedPropertyShortcode.php');
     require_once(COMMERCIAL_PROPERTY_PATH . 'src/shortcodes/PropertyListMapShortcode.php');
 
-
     new ListingTableShortcode();
     new ListingPriceShortcode();
     new ListingFeaturesShortcode();
@@ -54,7 +53,7 @@ class Plugin {
       'commercial-property-css',
       COMMERCIAL_PROPERTY_URL . 'assets/cp.css',
       array(),
-      '1.0.2',
+      '1.1.0',
       'all'
     );
 

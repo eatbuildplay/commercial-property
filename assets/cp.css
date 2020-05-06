@@ -303,6 +303,8 @@ body {
  * Responsive Styles
  */
 @media only screen and (max-width: 600px) {
+
+  /* Featured Property */
   .featured-property-list .property-list-item-wrap {
     width: 100%;
     max-width: 100%;
@@ -313,4 +315,16 @@ body {
   .featured-property-list-wrap {
     padding: 20px 0;
   }
+
+  /* Property Listings */
+  .property-list .property-list-item-wrap {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .property-list-image-wrap {
+    height: auto;
+  }
+
 }
