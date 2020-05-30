@@ -24,13 +24,14 @@ class PropertyListShortcode {
 
     $atts = shortcode_atts( array(), $atts, $this->tag );
 
-    // get properties
-    $projects = $this->fetchProperties();
-
     $template = new Template();
     $template->path = 'templates/';
 
+    $propertyTypes = get_terms('property_type');
     $template->name = 'property-list-filters';
+    $template->data = [
+      'propertyTypes' => $propertyTypes
+    ];
     $content = $template->get();
 
     $template->name = 'property-list';
