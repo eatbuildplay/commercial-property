@@ -19,7 +19,7 @@ if( $listingType == 'lease' ) {
   } else {
     $term = 'per month';
   }
-  $price = 'Lease for $' . number_format( $fields['price'] ) . ' ' . $term . '.';
+  $price = 'Lease for $' . number_format( $fields['price'], 2 ) . ' ' . $term . '.';
 }
 
 

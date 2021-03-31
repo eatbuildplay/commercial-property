@@ -5,7 +5,7 @@
  * Plugin Name: Commercial Property
  * Plugin URI: https://eatbuildplay.com/plugins/commercial-property/
  * Description: Commercial property real estate plugin for WordPress.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: Casey Milne, Eat/Build/Play
  * Author URI: https://eatbuildplay.com/
  * License: GPL3
